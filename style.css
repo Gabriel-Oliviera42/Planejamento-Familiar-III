@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #787878;
+    padding: 20px;
+    text-align: center;
+  }
+
+header a .img-logo {
+    width: 50px;
+}
+
+  /* Estilos das âncoras */
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  /* Estilos do dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Estilos do conteúdo do dropdown */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Estilos das âncoras do dropdown */
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Estilos quando o dropdown é exibido */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
