@@ -1,95 +1,77 @@
 :root {
-    --cor-principal: #fff;
-    --cor-secundaria: #747474;
-    --cor-texto: #fff;
+  --cor-principal: #fff;
+  --cor-secundaria: #747474;
+  --cor-texto: #fff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-principal);
 }
 
 /* Estilos do cabeçalho */
 header {
   background-color: var(--cor-secundaria);
-  padding: 5px;
   text-align: center;
-  padding: 25px;
+  box-shadow: 1px 1px 4px var(--cor-secundaria);
+  justify-content: space-between;
+  padding: 0 8%;
+  height: 100px;
 }
 
-header a .img-logo {
-    width: 50px;
+.header,
+.navigation_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-  /* Estilos das âncoras */
-  header a {
-    color: var(--cor-texto);
-    text-decoration: none;
-    padding: 10px;
-  }
+.logo_header a{
+  text-decoration: none; 
+  color: var(--cor-texto);
+}
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
+.navigation_header {
+  gap: 3em;
+}
 
-  nav a:hover {
-    background-color: #555;
-    color: #fff;
-  }
+.navigation_header a {
+  text-decoration: none; 
+  color: var(--cor-texto);
+}
+/* Estilos do dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  /* Estilos do dropdown */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+/* Estilos do conteúdo do dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cor-principal);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
 
-  /* Estilos do conteúdo do dropdown */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--cor-principal);
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 5px;
-  }
+/* Estilos das âncoras do dropdown */
+.dropdown-content a {
+  color: var(--cor-secundaria);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
 
-  /* Estilos das âncoras do dropdown */
-  .dropdown-content a {
-    color: var(--cor-secundaria);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
-  }
+/* Estilos quando o dropdown é exibido */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  /* Estilos quando o dropdown é exibido */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Estilos para a barra lateral */
-  .sidebar {
-    position: fixed;
-    top: 70px ;
-    left: 0;
-    width: 50px; /* Largura inicial da barra lateral */
-    height: 100vh; /* Altura igual à altura da janela */
-    background-color: #f1f1f1;
-    transition: width 0.5s ease; /* Transição suave da largura */
-  }
-
-  /* Estilos para a barra lateral quando o mouse passa por cima */
-  .sidebar:hover {
-    width: 450px; /* Largura expandida da barra lateral */
-  }
-
-  @media (max-width: 518px) {
-    .sidebar {
-      top: 87px;
-    }
-  }
