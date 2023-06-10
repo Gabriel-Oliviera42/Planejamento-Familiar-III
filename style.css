@@ -1,77 +1,72 @@
-:root {
-  --cor-principal: #fff;
-  --cor-secundaria: #747474;
-  --cor-texto: #fff;
-}
-
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--cor-principal);
-}
-
-/* Estilos do cabeçalho */
-header {
-  background-color: var(--cor-secundaria);
-  text-align: center;
-  box-shadow: 1px 1px 4px var(--cor-secundaria);
-  justify-content: space-between;
-  padding: 0 8%;
-  height: 100px;
-}
-
-.header,
-.navigation_header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.logo_header a{
-  text-decoration: none; 
-  color: var(--cor-texto);
-}
-
-.navigation_header {
-  gap: 3em;
-}
-
-.navigation_header a {
-  text-decoration: none; 
-  color: var(--cor-texto);
-}
-/* Estilos do dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Estilos do conteúdo do dropdown */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--cor-principal);
-  min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 5px;
-}
-
-/* Estilos das âncoras do dropdown */
-.dropdown-content a {
-  color: var(--cor-secundaria);
-  padding: 12px 16px;
+a {
   text-decoration: none;
-  display: block;
-  transition: background-color 0.3s ease;
 }
 
-/* Estilos quando o dropdown é exibido */
-.dropdown:hover .dropdown-content {
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
   display: block;
 }
 
+.header {
+  width: 100%;
+  height: 64px;
+  background: rgb(142, 142, 142);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  padding: 0 80px;
+  z-index: 3;
+}
+
+.header ul {
+  display: flex;
+  gap: 48px;
+}
+
+main {
+  width: 100%;
+  color: #333;
+  margin-top: 64px;
+}
+
+.main_section {
+  width: 100%;
+  padding: 0 200px;
+}
+
+.main_section_holder {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  margin-top: 160px;
+}
+
+.main_section_text {
+  width: 30%;
+}
+
+.main_section_title {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+.main_section_Subtitle {
+  line-height: 1.5rem;
+}
+
+.main_section_imges {
+
+}
